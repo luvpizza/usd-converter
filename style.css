@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 *{
     margin: 0;
@@ -11,7 +12,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 button{
     border: none;
@@ -22,8 +23,7 @@ button{
 /* converter-box */
 
 .converter__box{
-
-    background-color: white;
+    background: #fff;
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -33,6 +33,7 @@ button{
     align-items: center;
     justify-content: space-around;
     box-shadow: 2px 2px 30px 3px rgba(10, 70, 42, 0.411);
+    transition: .15s;
 }
 
 .main__inputs{
@@ -42,14 +43,17 @@ button{
     gap: 18px;
 }
 label{
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 500;
 }
 /* inputs */
 input{
     width: 190px;
     height: 25px;
     text-align: center;
+    font-family: inherit;
+    font-weight: 500;
+    border: 1px solid rgb(118, 185, 118);
+    border-radius: 10px;
 }
 .convert__btn{
     background-color: rgb(107, 180, 107);
@@ -60,6 +64,8 @@ input{
     text-transform: uppercase;
     border: 1px solid gray;
     transition: .05s;
+    letter-spacing: 2px;
+    border-radius: 20px;
 }
 .convert__btn:hover{
     background-color: rgb(87, 148, 87);
@@ -67,6 +73,7 @@ input{
 /* inputs */
 #converted__dollars{
     color: black;   
+    letter-spacing: 1px;
 }
 .converter__title{
     position: absolute;
@@ -76,4 +83,13 @@ input{
     font-family: 'Unbounded', sans-serif;
     font-weight: 800;
     color: rgb(95, 192, 95);
+}
+.converter__subtitle{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 7px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
 }

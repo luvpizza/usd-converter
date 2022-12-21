@@ -7,11 +7,11 @@ console.log(dollarPrice.value)
 
 convertBtn.addEventListener('click',(e => {
 
-    if(isNaN(somCount.value) === true || somCount.value === "" || somCount.value === " ") {
+    if(isNaN(somCount.value) === true || somCount.value === "" || somCount.value === " " || somCount.value <= 0) {
         alert("Ошибка! Сомы введены неверно!")
         somCount.value = ""
     } 
-    else if(isNaN(dollarPrice.value) === true || dollarPrice.value === "" || dollarPrice.value === " " || dollarPrice.value == 0){
+    else if(isNaN(dollarPrice.value) === true || dollarPrice.value === "" || dollarPrice.value === " " || dollarPrice.value <= 0){
         alert("Ошибка! Курс введен неверно!")
         dollarPrice.value = ""
     }
