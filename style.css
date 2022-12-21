@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, lightgreen, rgb(95, 192, 95));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+button{
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* converter-box */
+
+.converter__box{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 30px 3px rgba(10, 70, 42, 0.411);
+}
+
+.main__inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+label{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+/* inputs */
+input{
+    width: 190px;
+    height: 25px;
+    text-align: center;
+}
+.convert__btn{
+    background-color: rgb(107, 180, 107);
+    padding: 10px;
+    width: 80px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid gray;
+    transition: .05s;
+}
+.convert__btn:hover{
+    background-color: rgb(87, 148, 87);
+}
+/* inputs */
+#converted__dollars{
+    color: black;   
+}
+.converter__title{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    letter-spacing: 25px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    color: rgb(95, 192, 95);
+}
